@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     connect = require('gulp-connect'),
     less = require('gulp-less'),
-    concat = require('gulp-concat'),
     runSequence = require('run-sequence')
 
 gulp.task('default', function () {
