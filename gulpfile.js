@@ -52,7 +52,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('./src/styles/*.{css,less}', ['styles']);
+    gulp.watch(['./src/styles/*.less','./src/styles/global/*.less', './src/styles/blocks/*.less'], ['styles']);
     gulp.watch('./src/templates/*.html', ['templates']);
     gulp.watch('./src/scripts/*.js', ['scripts']);
 });
