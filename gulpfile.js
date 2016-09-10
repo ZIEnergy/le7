@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     connect = require('gulp-connect'),
     less = require('gulp-less'),
+    cleanCSS = require('gulp-clean-css'),
     runSequence = require('run-sequence')
 
 gulp.task('default', function () {
@@ -48,6 +49,7 @@ gulp.task('styles', function () {
     .pipe(autoprefixer({
         browsers: ['last 20 versions']
     }))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./build/css'));
 });
 
