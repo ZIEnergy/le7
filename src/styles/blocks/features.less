@@ -1,6 +1,10 @@
 .features {
   padding: 76px 0 84px;
   
+  @media screen and (max-width: @screen-md) {
+    padding: 70px 0 53px;
+  }
+  
   &__header {
     color: @color-primary;
     font-family: @font-family-main;
@@ -16,17 +20,47 @@
     display: inline-block;
     vertical-align: top;
     width: 270px;
+      
+    @media screen and (max-width: @screen-md) {
+      width: 44%;
+    }
     
     &:nth-child(n+2) {
       margin-left: 56px;
+      
+      @media screen and (max-width: @screen-md) {
+        margin-left: 0;
+      }
+    }
+    
+    &:nth-child(2n) {
+      
+      @media screen and (max-width: @screen-md) {
+        margin-left: 60px;
+      }
     }
     
     &:nth-child(4n) {
       margin-left: 0;
+      
+      @media screen and (max-width: @screen-md) {
+        margin-left: 60px;
+      }
     }
     
     &:nth-child(n+4) {
       margin-top: 60px;
+  
+      @media screen and (max-width: @screen-md) {
+        margin-top: 0;
+      }
+    }
+    
+    &:nth-child(n+3) {
+  
+      @media screen and (max-width: @screen-md) {
+        margin-top: 60px;
+      }
     }
   }
   
@@ -60,5 +94,9 @@
     font-family: @font-family-secondary;
     font-size: 21px;
     line-height: 30px;
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 100%;
+    }
   }
 }

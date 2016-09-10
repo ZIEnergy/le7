@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
   
+  @media screen and (max-width: @screen-sm) {
+    background-position: center top;
+  }
+  
   &__wrapper {
     padding-top: @header-height + 78px;
     padding-bottom: 130px;
@@ -12,6 +16,10 @@
   
     @media screen and (max-width: @screen-md) {
       padding-bottom: 65px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      padding-bottom: 0;
     }
   }
   
@@ -57,6 +65,7 @@
   
     @media screen and (max-width: @screen-md) {
       margin-top: 13px;
+      width: 345px;
       .promo__dscr-break--desktop {
         display: none;
       }
@@ -74,6 +83,14 @@
       right: -60px;
       bottom: -22px;
       left: auto;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      margin-top: 90px;
     }
   }
   
