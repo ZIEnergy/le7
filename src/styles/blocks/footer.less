@@ -5,6 +5,10 @@
   @media screen and (max-width: @screen-md) {
     padding-bottom: 25px;
   }
+      
+  @media screen and (max-width: @screen-sm) {
+    position: relative;
+  }
   
   &__bottom {
     .clearfix;
@@ -16,13 +20,18 @@
     font-size: 21px;
     line-height: 30px;
     width: 565px;
-    margin-top: 50px;
+    margin-top: 47px;
     float: left;
     text-align: left;
       
     @media screen and (max-width: @screen-md) {
       width: 430px;
       margin-top: 33px;
+    }
+      
+    @media screen and (max-width: @screen-xs) {
+      width: auto;
+      font-size: 18px;
     }
   }
   
@@ -39,9 +48,22 @@
   &__creator {
     margin-top: 75px;
     float: right;
+    margin-right: 12px;
       
     @media screen and (max-width: @screen-md) {
       margin-top: 92px;
+      margin-right: 0;
+    }
+      
+    @media screen and (max-width: @screen-sm) {
+      position: absolute;
+      bottom: 23px;
+      right: 30px;
+    }
+      
+    @media screen and (max-width: @screen-xs) {
+      position: static;
+      margin-top: 30px;
     }
   }
 }

@@ -7,17 +7,38 @@
   top: 0;
   z-index: 5;
   width: 100%;
+      
+  @media screen and (max-width: @screen-xs) {
+    height: auto;
+  }
   
   &__btns {
+    .clearfix;
     float: right;
+      
+    @media screen and (max-width: @screen-xs) {
+      float: none;
+      margin-top: 15px;
+      &:after {
+        display: none;
+      }
+    }
   }
   
   &__login {
     float: left;
     margin-right: 32px;
+      
+    @media screen and (max-width: @screen-xs) {
+      
+    }
   }
   
   &__signup {
     float: left;
+      
+    @media screen and (max-width: @screen-xs) {
+      
+    }
   }
 }
