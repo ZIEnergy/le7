@@ -6,6 +6,9 @@
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
+  color: @color-primary;
+  background: #fff;
+  transition: @transition;
   
   &--small {
     width: 109px;
@@ -23,12 +26,7 @@
     font-size: 21px;
   }
   
-  &--white {
-    color: @color-primary;
-    background: #fff;
-  }
-  
-  &--blue {
+  &:hover {
     background: @color-primary;
     color: #fff;
   }

@@ -1,5 +1,5 @@
 .promo {
-  background: url(../img/promo-bg.jpg) no-repeat;
+  background: url(../img/promo-bg.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -9,10 +9,20 @@
     padding-bottom: 130px;
     height: 100%;
     position: relative;
+  
+    @media screen and (max-width: @screen-md) {
+      padding-bottom: 65px;
+    }
   }
   
   &__content {
     width: 480px;
+    position: relative;
+    z-index: 5;
+  
+    @media screen and (max-width: @screen-md) {
+      width: 360px;
+    }
   }
   
   &__header {
@@ -21,6 +31,10 @@
     font-size: 55px;
     text-transform: uppercase;
     letter-spacing: .8px;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 44px;
+    }
   }
   
   &__header-comment {
@@ -28,6 +42,10 @@
     color: #fffefe;
     font-family: @font-family-main;
     margin-top: 5px;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 29px;
+    }
   }
   
   &__dscr {
@@ -35,15 +53,52 @@
     font-family: @font-family-main;
     font-size: 21px;
     line-height: 30px;
+    margin-top: 23px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-top: 13px;
+      .promo__dscr-break--desktop {
+        display: none;
+      }
+    }
   }
   
   &__demo {
     position: absolute;
     right: -104px;
     bottom: -33px;
+  
+    @media screen and (max-width: @screen-md) {
+      width: 526px;
+      height: 535px;
+      right: -60px;
+      bottom: -22px;
+      left: auto;
+    }
   }
   
   &__form {
     margin-top: 105px;
+  
+    @media screen and (max-width: @screen-md) {
+      margin-top: 70px;
+    }
+  }
+  
+  &__input-text {
+  
+    @media screen and (max-width: @screen-md) {
+      float: none;
+    }
+  }
+  
+  &__btn {
+  
+    @media screen and (max-width: @screen-md) {
+      float: none;
+      margin-left: 0;
+      margin-top: 22px;
+    }
+    
   }
 }
