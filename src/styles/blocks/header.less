@@ -15,30 +15,26 @@
   &__btns {
     .clearfix;
     float: right;
-      
-    @media screen and (max-width: @screen-xs) {
-      float: none;
-      margin-top: 15px;
-      &:after {
-        display: none;
-      }
-    }
   }
   
   &__login {
     float: left;
     margin-right: 32px;
       
-    @media screen and (max-width: @screen-xs) {
+    @media screen and (max-width: (@screen-xs - 40)) {
+      margin-right: 15px;
+    }
       
+    @media screen and (max-width: (@screen-xs - 80)) {
+      width: 70px;
     }
   }
   
   &__signup {
     float: left;
       
-    @media screen and (max-width: @screen-xs) {
-      
+    @media screen and (max-width:(@screen-xs - 80)) {
+      width: 70px;
     }
   }
 }

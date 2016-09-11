@@ -2,6 +2,8 @@
   .clearfix;
     
   @media screen and (max-width: @screen-xs) {
+    width: 222px;
+    margin: 0 auto;
     &:after {
       display: none;
     }
@@ -9,20 +11,21 @@
   
   &__input {
     float: left;
+    margin-right: 35px;
+    margin-bottom: 22px;
     
     @media screen and (max-width: @screen-xs) {
       float: none;
+      margin-right: 0;
     }
   }
   
   &__btn {
     float: left;
-    margin-left: 35px;
     
     @media screen and (max-width: @screen-xs) {
       float: none;
-      margin-left: 0;
-      margin-top: 22px;
+//      margin-top: 22px;
     }
   }
 }

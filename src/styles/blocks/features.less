@@ -3,7 +3,7 @@
   letter-spacing: .6px;
   
   @media screen and (max-width: @screen-md) {
-    padding: 70px 0 53px;
+    padding: 65px 0 53px;
   }
   
   @media screen and (max-width: @screen-sm) {
@@ -107,6 +107,12 @@
     padding-bottom: 25px;
     display: table-cell;
     vertical-align: bottom;
+  
+    @media screen and (max-width: @screen-xs) {
+      display: block;
+      text-align: center;
+      height: auto;
+    }
   }
   
   &__item-header {
