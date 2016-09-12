@@ -8,8 +8,16 @@
   z-index: 5;
   width: 100%;
       
+  @media screen and (max-width: @screen-md) {
+    padding: 0;
+  }
+      
   @media screen and (max-width: @screen-xs) {
     height: auto;
+  }
+  
+  &__wrapper {
+    padding: 0 0 0 25px;
   }
   
   &__btns {
@@ -17,24 +25,50 @@
     float: right;
   }
   
-  &__login {
+  &__btns-item {
     float: left;
-    margin-right: 32px;
+    text-decoration: none;
+    display: block;
       
-    @media screen and (max-width: (@screen-xs - 40)) {
-      margin-right: 15px;
+    @media screen and (max-width: @screen-md) {
+      width: 139px;
+      text-align: center;
+      height: @header-height;
+    }
+      
+    @media screen and (max-width: (@screen-xs - 50)) {
+      width: 100px;
+      padding: 0 15px;
     }
       
     @media screen and (max-width: (@screen-xs - 80)) {
+      width: auto;
+      padding: 0 7.5px;
+    }
+  }
+  
+  &__login {
+    margin-right: 32px;
+      
+    @media screen and (max-width: @screen-md) {
+      margin: 21px auto 0;
+    }
+      
+    @media screen and (max-width: (@screen-xs - 50)) {
       width: 70px;
+      margin: 21px 0 0;
     }
   }
   
   &__signup {
-    float: left;
       
-    @media screen and (max-width:(@screen-xs - 80)) {
+    @media screen and (max-width: @screen-md) {
+      margin: 21px auto 0;
+    }
+      
+    @media screen and (max-width:(@screen-xs - 50)) {
       width: 70px;
+      margin: 21px 0 0;
     }
   }
 }
